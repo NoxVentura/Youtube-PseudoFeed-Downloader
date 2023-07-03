@@ -35,28 +35,25 @@ Additionally,
    ```
 
    Note: The first row should be the header and should not contain any subscription data.
+   This is the default youtube takeout csv file
 
-2. Place the CSV file in the same directory as the script file and name it `subscriptions.csv`.
+3. Place the CSV file in the same directory as the script file and name it `subscriptions.csv`.
 
-3. Ensure that you have the YouTube downloader tool (`yt.exe`) in the same directory as the script file.
+4. Ensure that you have the YouTube downloader tool (`yt.exe`) in the same directory as the script file.
 
-4. Open a terminal or command prompt and navigate to the directory where the script file is located.
+5. Open a terminal or command prompt and navigate to the directory where the script file is located.
 
-5. Run the script by executing the following command:
+6. Run the script by executing the following command:
 
    ```shell
-   python youtube_downloader.py
+   python fetcher.py
    ```
 
    The script will read the `subscriptions.csv` file, extract the YouTube channel links, and download the corresponding videos using the YouTube downloader tool.
 
-6. The downloaded videos will be saved in the same directory as the script file.
+7. The downloaded videos will be saved in the same directory as the script file.
 
-Note: By default, the script downloads videos from the past week. If you want to change the number of weeks for which you want to download videos, you can modify the `--dateafter` argument in the `call_downloader()` function in the script file.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request.
+Note: By default, the script downloads videos from the past week. If you want to change the number of weeks for which you want to download videos, you can modify the `--daysbefore`,`--subscriptionpath`, `--videocount` and other cli commands.
 
 ## License
 
