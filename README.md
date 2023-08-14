@@ -6,7 +6,7 @@ This script allows you to download YouTube videos listed in a CSV file for a spe
 Before using this script, ensure that you have the following installed:
 
 - Python (version 3 or above)
-- YouTube downloader tool (e.g., yt.exe)
+- yt-dlp binary(renamed as yt.exe)
 
 ## Installation
 
